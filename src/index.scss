@@ -13,7 +13,9 @@ body {
 	background-color: rgb(184, 29, 46);
 	font-size: px2rem(12px);
 	color: #fff;
-	position: relative;
+	position: fixed;
+	top: px2rem(0px);
+	z-index: 1;
 	.logo {
 		position: absolute;
 		top: px2rem(10px);
@@ -71,6 +73,9 @@ body {
 	height: px2rem(50px);
 	background-color: #fff;
 	font-size: px2rem(18px);
+	position: fixed;
+	top: px2rem(80px);
+	z-index: 1;
 	ul>li {
 		float: left;
 		width: 20%;
@@ -90,6 +95,7 @@ body {
 .score {
 	width: 100%;
 	height: px2rem(125px);
+	margin-top: px2rem(130px);
 	/*background-color: */
 	.game {
 		box-sizing: border-box;
@@ -111,6 +117,7 @@ body {
 }
 .news-list {
 	width: 100%;
+	margin-bottom: px2rem(60px);
 	ul>li {
 		width: 100%;
 		height: px2rem(104px);
@@ -219,24 +226,29 @@ body {
 				position: absolute;
 				bottom: px2rem(20px);
 				left: px2rem(-2px);
-				background: red no-repeat;
-				background-size: 28px;
+				background: no-repeat;
+				background-size: px2rem(28px);
 			};
 		}
 		&:nth-child(1) span::before {
 			background-image: url('./icons/home.png');
+
 		}
 		&:nth-child(2) span::before {
 			background-image: url('./icons/game.png');
 		}
 		&:nth-child(3) span::before {
 			background-image: url('./icons/community.png');
+			background-size: px2rem(24px);
+			background-position: px2rem(2px) px2rem(2px);
 		}
 		&:nth-child(4) span::before {
 			background-image: url('./icons/good.png');
 		}
 		&:nth-child(5) span::before {
 			background-image: url('./icons/more.png');
+			background-size: px2rem(24px);
+			background-position: px2rem(2px) px2rem(2px);
 		}
 	}
 }
