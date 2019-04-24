@@ -105,15 +105,84 @@ body {
 		border-radius: 5px;
 		font-size: px2rem(15px);
 		background-color: #fff;
-		&:first-child {
-			float: left;
-			margin-left: px2rem(7px);
-		};
-		&:last-child {
-			float: right;
-			margin-right: px2rem(7px);
-		};
+		position: relative;
+		.game-header {
+			width: 100%;
+			height: px2rem(20px);
+			line-height: px2rem(20px);
+			/*background-color: #aaa;*/
+			margin:px2rem(10px) px2rem(0px);;
+			span:first-child {
+				float: left;
+				margin-left:px2rem(8px);
+				color: #666;
+			};
+			span:last-child {
+				margin-right: px2rem(8px);
+				padding: px2rem(0px) px2rem(8px) px2rem(0px) px2rem(25px);
+				float: right;
+				color: #fff;
+				font-size: px2rem(13px);
+				border-radius: px2rem(25px);
+				background-color: rgba(0,0,0,0.3);
+				position: relative;
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: px2rem(3px);
+					left: px2rem(8px);
+					width: px2rem(12px);
+					height: px2rem(12px);
+					background: url('./icons/right-triangle.png') no-repeat;
+					background-size: px2rem(12px);
+				};
+			}
+		}
+		.team {
+			width: px2rem(50px);
+			height: px2rem(70px);
+			position: absolute;
+			top: px2rem(40px);
+			font-size: px2rem(12px);
+			img {
+				display: block;
+				width: px2rem(42px);
+				height: px2rem(42px);
+			}
+			p {
+				height: px2rem(28px);
+				line-height: px2rem(28px);
+				/*text-align: center;*/
+			}
+		}
+		.away {
+				left: px2rem(10px);
+			}
+		.home {
+			right: px2rem(10px);
+			img, p {
+				float: right;
+			}
+		}
+		.lost {
+			color: #666;
+		}
+		.game-score {
+			width: px2rem(70px);
+			height: px2rem(12px);
+			margin: px2rem(20px) auto;
+			text-align: center;
+		}
 	}
+	.game1 {
+		float: left;
+		margin-left: px2rem(7px);
+	};
+	.game2 {
+		float: right;
+		margin-right: px2rem(7px);
+	};
 }
 .news-list {
 	width: 100%;
