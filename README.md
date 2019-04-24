@@ -5,5 +5,5 @@
 展示地址（手机端浏览）：https://yuan-yiming.github.io/hupu-mobile/
 
 手机扫一扫：
-https://raw.githubusercontent.com/Yuan-Yiming/hupu-mobile/master/src/images/1556074464.png
+![Image text](https://raw.githubusercontent.com/Yuan-Yiming/hupu-mobile/master/src/images/1556074464.png)
 
