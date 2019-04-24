@@ -2,9 +2,7 @@
 
 用Rem适配做一个虎扑Web APP首页。
 
-展示地址（手机端浏览）：https://yuan-yiming.github.io/hupu-mobile/
-
-手机扫一扫：
+扫一扫可查看内容：
 
 ![Image text](https://raw.githubusercontent.com/Yuan-Yiming/hupu-mobile/master/src/images/link.png)
 
